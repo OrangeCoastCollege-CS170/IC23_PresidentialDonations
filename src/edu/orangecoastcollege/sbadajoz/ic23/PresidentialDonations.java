@@ -28,7 +28,7 @@ public class PresidentialDonations {
             }
             file.close();
             average = sum / average;
-            System.out.println("\nAfter analzying the data found for " + ((fileName.substring(0, fileName.indexOf("2")).equals("clinton"))? "Hilary Clinton":"Donald Trump") + " the following data was produced:"
+            System.out.println("\nAfter analzying the data found for " + Character.toUpperCase(fileName.charAt(0)) +fileName.substring(1, fileName.indexOf("2")) + " the following data was produced:"
                     + "\nLargest Donation: " + currency.format(max)
                     + "\nSmallest Donation: " + currency.format(min)
                     + "\nAverage Donation: " + currency.format(average));
